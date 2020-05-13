@@ -30,14 +30,14 @@ export default class FilterObject extends Component {
     }
     filterFamilyMembers(prop) {
         let familyMembers = this.state.familyMembers
-        let filteredArray = []
+        let filteredFamilyMembers = []
        
         for (let i = 0; i < familyMembers.length; i++) {
             if (familyMembers[i].hasOwnProperty (prop)) {
-                filteredArray.push (familyMembers[i])
+                filteredFamilyMembers.push (familyMembers[i])
             }
         }
-        this.setState ({filteredArray: filteredArray})
+        this.setState ({filteredFamilyMembers: filteredFamilyMembers})
     }
 
     render () {
