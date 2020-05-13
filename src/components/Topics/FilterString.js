@@ -34,7 +34,7 @@ export default class FilterString extends Component {
                <h4>Filter String</h4>
                <span className="puzzleText"> Nouns: {JSON.stringify (this.state.nouns, null, 10)} </span>
                <input className="inputLine" onChange={ (e) => this.handleChange (e.target.value)}/>
-               <button className="confirmationButton" onClick= {() => this.filterNouns (this.state.userInput)}>Filter</button>
+               <button className="confirmationButton" onClick={() => this.filterNouns (this.state.userInput)}>Filter</button>
                <span className="resultsBox filterStringRB">Filtered Nouns: {JSON.stringify (this.state.filteredNouns, null, 10)} </span>
            </div>
         )

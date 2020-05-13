@@ -46,7 +46,7 @@ export default class FilterObject extends Component {
                 <h4>Filter Object</h4>
                 <span className="puzzleText">Original: {JSON.stringify (this.state.familyMembers, null, 10)} </span>
                 <input className="inputLine" onChange={ (e) => this.handleChange (e.target.value)}/>
-                <button className="confirmationButton" onClick= { () => this.filterFamilyMembers (this.state.userInput)}>Filter</button>
+                <button className="confirmationButton" onClick={ () => this.filterFamilyMembers (this.state.userInput)}>Filter</button>
                 <span className="resultsBox filterObjectRB">Filtered: {JSON.stringify (this.state.filteredFamilyMembers, null, 10) }</span>
             </div>
         )
