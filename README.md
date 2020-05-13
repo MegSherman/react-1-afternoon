@@ -46,7 +46,7 @@ In this step, we are going to dive into the functionality of the application. If
 
 <br />
 
-Let's begin by opening `src/components/TopicBrowser/TopicBrowser.js` and importing `React, { Component }` from `react` at the top of the file. This will allow use to use JSX and create a class that extends on `Component`.
+Let's begin by opening `src/components/TopicBrowser/TopicBrowser.js` and importing `React, { Component }` from `react` at the top of the file. This will allow us to use JSX and create a class that extends on `Component`.
 
 ```js
 import React, { Component } from 'react';
